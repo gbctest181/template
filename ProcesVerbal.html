@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <title>Proces Verbal</title>
+</head>
+<body>
+  <header>
+    <div class="Header">
+      <div class="Logo"></div>
+      <div class="Titre">
+        <h1>PROCES VERBAL</h1>
+      </div>
+    </div>
+</header>
+<hero>
+<div class="Client">
+    <div class="ClientFinal">
+        <label for="clientFinal">
+        <input
+            type="text"
+            name="clientFinal"
+            value=""
+            placeholder="Nom :">
+      </label>
+      <br>
+        <label for="adresse">
+        <input
+            type="text"
+            name="adresse"
+            placeholder="Adresse :">
+      </label>
+          <br>
+        <label for="codePostal">
+        <input
+            type="number"
+            name="codePostal"
+            value=""
+            placeholder="Code postal :">
+      </label>
+          <br>
+        <label for="ville">
+        <input
+            type="text"
+            name="ville"
+            value=""
+            placeholder="Ville :">
+      </label>
+    </div>
+
+    <div class="ClientIntervention">
+        <label for="chantier">
+        <input
+            type="text"
+            name="adresseChantier"
+            value=""
+            placeholder="Adresse du chantier :">
+      </label>
+          <br>
+        <label for="objet">
+        <input
+            type="text"
+            name="objet"
+            value=""
+            placeholder="Objet du marché :">
+      </label>
+      <div class="choix">
+      <div class="reception">
+        <label>Réception : </label>
+          <input
+              type="radio"
+              id="reception_def"
+              name="reception"
+              value="" >
+          <label for="reception_def">Définitve</label>
+          <input
+              type="radio"
+              id="reception_part"
+              name="reception"
+              value="" >
+          <label for="reception_part">Partielle</label>
+      </div>
+  <div class="MES">
+    <label>Mise en service : </label>
+    <input
+        type="radio"
+        id="mes_def"
+        name="mes"
+        value="" >
+    <label for="mes_def">Définitve</label>
+    <input
+      type="radio"
+      id="mes_part"
+      name="mes"
+      value="" >
+    <label for="mes_part">Partielle</label>
+  </div>
+  <div class="reserves">
+    <label>Réserves : </label><!--  checkbox qui devrait être indicatif d une observation existante -->
+        <input
+          type="checkbox"
+          name="obsvervations"
+          value="" >
+      <label>(Voir observations)</label>
+  </div>
+  </form>
+</div>
+    </div>
+    <div class="Document">
+        <div class="ProcesVerbal">
+          <table>
+              <h4>Documents de référence</h4>
+            <form>
+              <tr>
+                <td>
+                <input
+                  type="text"
+                  name="devis"
+                  value=""
+                  placeholder="Devis N° :">
+                </td>
+                <td><label for="dateDevis">du
+                    <input
+                      type="date"
+                      name="dateDevis"
+                      value="">
+                      </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="commande"
+                    placeholder="Commande client n° :"   >
+                  </td>
+                <td>
+                  <label for="dateCommande">du
+                  <input
+                    type="date"
+                    name="dateCommande"
+                    value=""></label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="CCTP" value=""
+                    placeholder="CCTP n° :"  >
+                </td>
+                <td>
+                  <label for="dateCCTP">du
+                  <input
+                    type="date"
+                    name="dateCCTP"
+                    value="">
+                  </label>
+                </td>
+              </tr>
+            </form>
+              </table>
+              </div>
+        </div>
+  </div>
+
+      <div class="clauses">
+        <p>Le clients atteste, par le présent, que les matériels livrés et installés par GB CONCEPT :</p>
+        <p> <span>&#128073;&#127996;</span>sont conformes aux caractéristiques indiquées dans les documents précisés en référence.</p>
+        <p><span>&#128073;&#127996;</span> sont en bon état de fonctionnement.</p>
+        <p><b><U>Rappel</U> : Les matériels fournis ce jour demeurent la propriété exclusive de l'entreprise GB CONCEPT jusqu'au paiement complet des matériels et prestations par le client.</b></p>
+        <p> <b><U>Responsabilité :</U></b> A compter de ce jour, le client assure l'entière responsabilité des matériels, y compris l'ensemble des obligations d'assurance.</p>
+
+      </div>
+      <div class="Signatures">
+        <div class="SignatureGBC">
+          <h4>GB CONCEPT</h4>
+          <input
+              type="text"
+              name="clientFinal"
+              value=""
+              placeholder="Nom :">
+          <p>Cachet et signature : </p>
+          <div class="Signature">
+            <canvas
+                    id="signG" width="165" height="48" >Signature</canvas>
+          </div>
+        </div>
+        <div class="Date_signature">
+          <div class="date">
+            <label>Établi le : </label>
+            <input
+              type="date"
+              name="signature"
+              value="">
+            </div>
+            <a href="#">
+            <div class="Bouton">
+            ENVOYER
+        </div></a>
+          <a href="observation.html">
+            <div class="Bouton">
+              OBSERVATION
+            </div></a>
+        </div>
+
+        <div class="SignatureClient">
+          <h4>LE CLIENT</h4>
+          <input
+              type="text"
+              name="clientFinal"
+              value=""
+              placeholder="Nom :">
+          <p>Cachet et signature : </p>
+          <div class="Signature">
+            <canvas
+                    id="signC" width="165" height="48" >Signature</canvas>
+          </div>
+        </div>
+      </div>
+
+</hero>
+    <footer>
+      <div class="Footer">
+        <p>SARL GB CONCEPT-181, Rue de St Éxupéry-34130 MAUGUIO.</p>
+        <p>Tél: 04.20.30.28.28/ Fax: 04.67.82.75.38 Email: contact@gbconcept34.fr - RCS Montpellier 501 826 176</p>
+      </div>
+    </footer>
+
+</body>
+</html>

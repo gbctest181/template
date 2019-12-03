@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>Observations</title>
+</head>
+<body>
+<header>
+    <div class="Header">
+        <div class="Logo"></div>
+        <div class="Titre">
+            <h1>OBSERVATIONS</h1>
+        </div>
+    </div>
+</header>
+</body>
+<div class="Technicien">
+    <div>
+        <label>Techniciens affectés sur l'intervention : </label>
+        <input type="text" name="technicien" placeholder="Technicien">
+    </div>
+    <div>
+        <label>Début d'intervention</label>
+        <input type="date" value="" name="dateIntervention">
+    </div>
+
+</div>
+<div class="Rapport">
+    <div class="RapportTech">
+        <textarea name="" id="rapport" cols="95" rows="50" placeholder="Rapport Technicien"></textarea>
+    </div>
+    <br>
+    <div class="Validation">
+        <div class="SignatureClient">
+            <div class="NomClient">
+                <input
+                        type="text"
+                        name="nomClient"
+                        placeholder="Nom du client :">
+            </div>
+            <div class="dateSign">
+                <input
+                        type="date"
+                        value=""
+                        name="dateSign">
+            </div>
+            <div class="Signature">
+                <p>Signature Client</p>
+                <canvas id="signatureC" width="165" height="48" ></canvas>
+            </div>
+        </div>
+
+        <div class="SignatureTech">
+            <div class="NomTech">
+                <input
+                        type="text"
+                        name="nomTech"
+                        placeholder="Nom du Technicien :">
+            </div>
+        <div class="Signature">
+            <p>Signature Technicien</p>
+            <canvas
+                    id="signatureT" width="165" height="48" ></canvas>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="ObservationClient">
+        <textarea name="ObsClient" id="ObsClient" cols="95" rows="10" placeholder="Observations du client"></textarea>
+    </div>
+</div>
+    <a href="BonIntervention.html">
+        <div class="Bouton">
+            ENVOYER
+        </div></a>
+</div>
+<footer>
+    <div class="Footer">
+        <p>SARL GB CONCEPT-181, Rue de St Éxupéry-34130 MAUGUIO.</p>
+        <p>Tél: 04.20.30.28.28/ Fax: 04.67.82.75.38 Email: contact@gbconcept34.fr - RCS Montpellier 501 826 176</p>
+    </div>
+</footer>
+</html>
